@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="UIDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-gv-2nI">
+                        <rect key="frame" x="29.999999999999996" y="68" width="45.666666666666657" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="7oZ-ih-EdS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="BRt-JS-EKu">
+                        <rect key="frame" x="25" y="15" width="56" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="wNr-pY-coo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X3 Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-ha-FTX">
+                        <rect key="frame" x="25" y="91" width="48" height="14"/>
+                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.078431372550000003" green="0.19215686269999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wdD-ha-FTX" firstAttribute="top" secondItem="fR6-gv-2nI" secondAttribute="bottom" constant="4" id="4Da-2n-n1L"/>
+                <constraint firstItem="fR6-gv-2nI" firstAttribute="top" secondItem="BRt-JS-EKu" secondAttribute="bottom" constant="17" id="5tf-Ew-Lwe"/>
+                <constraint firstItem="fR6-gv-2nI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Rrd-Jt-YH5"/>
+                <constraint firstAttribute="bottom" secondItem="wdD-ha-FTX" secondAttribute="bottom" constant="20" id="cIN-4V-ATf"/>
+                <constraint firstItem="BRt-JS-EKu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="fd8-Mc-uRF"/>
+                <constraint firstAttribute="trailing" secondItem="BRt-JS-EKu" secondAttribute="trailing" constant="19" id="jbg-IX-yA5"/>
+                <constraint firstItem="BRt-JS-EKu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="ldm-cA-NSn"/>
+                <constraint firstItem="wdD-ha-FTX" firstAttribute="leading" secondItem="fR6-gv-2nI" secondAttribute="leading" constant="-4.9999999999999964" id="u1w-zm-82R"/>
+                <constraint firstAttribute="trailing" secondItem="wdD-ha-FTX" secondAttribute="trailing" constant="27" id="wNE-4K-xd0"/>
+            </constraints>
+            <size key="customSize" width="295" height="395"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="DeviceLabel" destination="wdD-ha-FTX" id="6Xx-Kq-CKp"/>
+                <outlet property="imageView" destination="BRt-JS-EKu" id="Jzw-9o-i8Q"/>
+                <outlet property="titleLabel" destination="fR6-gv-2nI" id="N8N-Oj-d0E"/>
+            </connections>
+            <point key="canvasLocation" x="294.6564885496183" y="107.3943661971831"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="light" width="48" height="48"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
